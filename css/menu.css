@@ -82,7 +82,8 @@ button {
 
     nav a {
         font-size: 1em;
-        padding: 0.5em;
+        display: block;
+        text-aling: center;
         
     }
 
