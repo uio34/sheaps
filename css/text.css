@@ -86,6 +86,26 @@ p {
 }
 
 
+.email-link {
+    display: inline-block;    
+    font-size: 1.1em;         
+    margin-top: 20px;        
+    margin-bottom: 20px;      
+    padding: 6px 12px;       
+    color: #29b6e8;           
+    text-decoration: none;   
+    font-weight: bold;        
+    border: 2px solid #29b6e8; 
+    border-radius: 5px;       
+    transition: all 0.3s ease;
+}
+
+
+.email-link:hover {
+    background-color: #29b6e8; 
+    color: #ffffff;           
+}
+
    
    
 

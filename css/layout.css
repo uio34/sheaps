@@ -14,9 +14,7 @@ body {
 
 .wrapper {
     width: 90%;
-
-    min-width: 80em;
-
+ 
     max-width: 120em;
 
     margin: auto;}
@@ -116,5 +114,22 @@ footer {background-color: black;
 
 .yamato-page .history-box p {
     color: #ffffff !important;
+}
+
+
+max-width: 800px {
+    .content, .sidebar, 
+    .cruisers-page .content, .cruisers-page .sidebar, 
+    .yamato-page .content, .yamato-page .sidebar {
+        width: 100% !important;
+        float: none !important;
+        margin: 0 !important;
+        padding: 10px 0 !important;
+    }
+    
+    .logo, nav {
+        float: none !important;
+        text-align: center;
+    }
 }
  
