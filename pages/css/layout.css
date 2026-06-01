@@ -79,3 +79,51 @@ footer {
 
     margin-top: 2em;
 }
+
+
+max-width: 800px {
+  
+    .wrapper {
+        min-width: 0 !important; 
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+   
+    .top-line, footer {
+        width: 100% !important;
+    }
+
+  
+    .yamato-page .layout {
+        float: none !important;
+        margin: 20px auto !important;
+        width: 95% !important;
+    }
+
+   
+    .content, .sidebar, 
+    .cruisers-page .content, .cruisers-page .sidebar,
+    .yamato-page .content, .yamato-page .sidebar {
+        width: 100% !important;
+        float: none !important;
+        padding: 15px !important;
+        box-sizing: border-box;
+    }
+
+  
+    body {
+        font-size: 14px !important; 
+    }
+
+   
+    nav {
+        float: none !important;
+        text-align: center;
+        margin-top: 10px;
+    }
+    nav li {
+        display: inline-block;
+        margin: 5px;
+    }
+}
