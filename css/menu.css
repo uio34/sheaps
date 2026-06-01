@@ -81,10 +81,10 @@ button {
     }
 
     nav a {
-        font-size: 1em;
         display: block;
-        text-aling: center;
-        
+        text-align: center;
+        font-size: 1.2em;
     }
 
 }
+
