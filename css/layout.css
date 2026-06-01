@@ -174,3 +174,10 @@ max-width: 800px {
         margin: 5px !important;
     }
 }
+
+max-width: 800px {
+    body {
+        background-color: red !important; /* Весь фон должен стать ярко-красным */
+    }
+    /* ... остальной код ... */
+}
