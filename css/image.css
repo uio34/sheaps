@@ -1,5 +1,5 @@
 .banner img {
-    width: 100%;
+    width: 80%;
 
     height: 250px;
 
@@ -34,7 +34,7 @@
     height: auto;}
     
 .cruisers-page .ship-card img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border: 3px solid #29b6e8;
     margin: 1em 0;}
