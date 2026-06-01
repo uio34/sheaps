@@ -3,7 +3,7 @@
 
     height: 250px;
 
-    display: block;
+  
 }
 
 .content img {
@@ -65,20 +65,6 @@ img {
     height: auto;    /* Сохраняем пропорции, чтобы не сплющило */
 }
 
-/* Конкретно для баннера */
-.banner img {
-    width: 100%;     /* Растягиваем на всю доступную ширину */
-    max-width: 100%; 
-    height: auto;    /* Убери здесь height: 250px, если он есть, пусть подстраивается сам */
-    display: block;
-}
-
-/* Для страницы лайнеров */
-.cruisers-page .ship-card img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
 
     
 
