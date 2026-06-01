@@ -1,63 +1,32 @@
 .banner img {
     width: 100%;
-
     height: 250px;
-
     display: block;
 }
 
 .content img {
-    width: 100%;
-
+    max-width: 100%;
+    height: auto;
     float: right;
-
     margin: 1em;
-
     border: 0.2em solid #cccccc;
 }
 
-.history-image{
+max-width: 800px {
 
-    text-align: right;
+    .content img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
 
-    margin: 2em 0;
-    
-    width: 90%;
+    .ship-media img,
+    .history-image img,
+    .history-img img,
+    .military-image img {
+        width: 100%;
+        height: auto;
+    }
 }
-
-.history-img
-
-{  width:80%;
-
-    max-width: 700px;
-    
-    height: auto;}
-    
-.cruisers-page .ship-card img {
-    width: 100%;
-    height: auto;
-    border: 3px solid #29b6e8;
-    margin: 1em 0;}
-    
-   
-
-.yamato-page .military-image {
-    display: block;
-    width: 100%;
-    clear: both; 
-    margin: 2em 0;
-    float: none !important;
-}
-
-.yamato-page .military-image img {
-    float: none !important;     
-    width: 100% !important;  
-    height: auto !important;    
-    border: 5px solid #555;
-    box-sizing: border-box;    
-    display: block;
-    margin: 0 auto !important;  
-}
-
     
 
