@@ -127,4 +127,12 @@ footer {
 .yamato-page .history-box p {
     color: #ffffff !important;
 }
+
+@media screen and (max-width: 800px) {
+
+    .wrapper {
+        min-width: 0;
+        width: 95%;
+    }
+}
  
