@@ -1,9 +1,9 @@
 .banner img {
-    width: 80%;
-    display: block;
-    height: auto;
+    width: 100%;
 
-  
+    height: 250px;
+
+    display: block;
 }
 
 .content img {
@@ -34,7 +34,7 @@
     height: auto;}
     
 .cruisers-page .ship-card img {
-    width: 80%;
+    width: 100%;
     height: auto;
     border: 3px solid #29b6e8;
     margin: 1em 0;}
@@ -58,13 +58,6 @@
     display: block;
     margin: 0 auto !important;  
 }
-
-/* Универсальный фикс для всех картинок */
-img {
-    max-width: 100%; /* Картинка никогда не будет шире экрана */
-    height: auto;    /* Сохраняем пропорции, чтобы не сплющило */
-}
-
 
     
 

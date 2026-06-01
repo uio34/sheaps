@@ -1,100 +1,130 @@
-/* 1. Глобальные настройки */
-html, body {
+body {
     margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* Защита от горизонтальной прокрутки */
     background-color: #e9e9e9;
+    font-size: 10px;
     font-family: Arial, sans-serif;
-    /* Умный размер шрифта: на компах будет 10px, на мобилках чуть меньше */
-    font-size: clamp(8px, 1.2vw, 10px); 
+    
+    overflow-x: hidden; 
 }
 
-/* 2. ЛИНИИ: Теперь они гарантированно на весь экран */
 .top-line {
-    height: 8px;
+    height: 0.8em;
     background-color: #29b6e8;
-    width: 100%;
+   
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
-.yamato-page .top-line {
-    background-color: #8b0000;
-}
-
-/* 3. КОНТЕЙНЕР: Центрируем и убираем жесткие ограничения */
 .wrapper {
-    width: 95%;
-    max-width: 1200px;
-    margin: 0 auto;
-    min-width: 0 !important; /* Убираем 80em, которые все ломали */
+    width: 90%;
+    min-width: 80em;
+    max-width: 120em;
+    margin: auto;
 }
 
-/* 4. ШАПКА И МЕНЮ */
-header { overflow: hidden; padding: 1.5em 0; }
-.logo { float: left; font-size: 2em; }
-nav { float: right; margin-top: 1em; }
+header {
+    overflow: hidden;
+    padding: 2em 0;
+}
 
-/* 5. СЕТКА: На мобилках колонки упадут друг под друга сами */
+.logo {float: left;}
+
+nav {
+    float: right;
+    margin-top: 2em;
+}
+
 .layout {
     overflow: hidden;
-    margin-top: 1.5em;
+    margin-top: 2em;
     background-color: White;
-    padding: 1.5em;
-    display: flex;
-    flex-wrap: wrap; /* Магия: если места мало, блоки переносятся */
+    padding: 2em;
 }
 
-.content { 
-    flex: 1 1 65%; /* Занимает 65%, но может расширяться */
-    min-width: 300px; /* Если экран уже 300px, блок упадет вниз */
-    padding: 1em;
+.content {
+    width: 65%;
+    float: left;   
+    padding: 2em;
     box-sizing: border-box;
 }
 
-.sidebar { 
-    flex: 1 1 30%;
-    min-width: 250px;
-    padding: 1em;
-    box-sizing: border-box;
+.sidebar {
+    width: 30%;
+    float: right;
+    padding: 2em;
+    box-sizing: border-box; 
+    overflow: hidden;
 }
 
-/* 6. ЯМАТО: Центрируем темный блок */
-.yamato-page .layout {
-    background-color: #2c2c2c;
-    margin: 2em auto !important;
-    justify-content: center;
-}
-
-/* 7. КАРТИНКИ: Чтобы не вылезали за края */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-}
-
-/* 8. ПОДВАЛ */
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 2em;
     margin-top: 2em;
-    width: 100%;
+   
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+    
+.history-box {
+    background-color: #f7f7f7;
+    padding: 1.5em;
+    margin: 2em 0;
+    border-left: 0.5em solid #29b6e8;
 }
 
-/* 9. ФИКС ДЛЯ МОБИЛОК: Убираем гигантские заголовки */
-max-width: 600px {
-    body { font-size: 14px; } /* Увеличиваем базу, чтобы em работали адекватно */
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 2rem; }
-    nav { float: none; text-align: center; width: 100%; }
-    nav li { display: inline-block; margin: 5px; }
-    .logo { float: none; text-align: center; display: block; }
+
+.cruisers-page .content {
+    float: right; 
+    width: 70%;
+    background-color: #f9f9f9; 
+}
+
+.cruisers-page .sidebar {
+    float: left; 
+    width: 25%;
+}
+
+
+.yamato-page .layout {
+    background-color: #2c2c2c; 
+  
+    float: none;
+    margin: 2em auto; 
+    display: table; 
+}
+
+.yamato-page .content {
+    float: left;
+    width: 65%;
+}
+
+.yamato-page .sidebar {
+    float: right;
+    width: 30%;
+    background-color: #3d3d3d; 
+}
+
+.yamato-page .top-line {
+    background-color: #8b0000; 
+}
+
+.yamato-page .history-box {
+    background-color: #444444 !important; 
+    color: #ffffff !important;           
+    border-left: 0.5em solid #ff4d4d !important; 
+}
+
+.yamato-page .history-box p {
+    color: #ffffff !important;
 }
  
