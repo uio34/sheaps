@@ -127,4 +127,51 @@ footer {
 .yamato-page .history-box p {
     color: #ffffff !important;
 }
+
+/* Финальный фикс для мобилок */
+max-width: 800px {
+    /* 1. Успокаиваем шрифты, чтобы не были огромными */
+    html, body {
+        font-size: 14px !important; 
+    }
+
+    /* 2. Линии на весь экран без прокрутки */
+    .top-line, footer {
+        width: 100% !important;
+        margin: 0 !important;
+        left: 0 !important;
+    }
+
+    /* 3. Делаем блоки "резиновыми" */
+    .wrapper {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* 4. Складываем колонки друг под друга (Лайнеры и Главная) */
+    .content, .sidebar, 
+    .cruisers-page .content, .cruisers-page .sidebar {
+        width: 100% !important;
+        float: none !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 5. Картинки не должны вылезать за экран */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* 6. Поправляем меню, чтобы кнопки не слипались */
+    nav {
+        float: none !important;
+        text-align: center !important;
+        margin-top: 10px !important;
+    }
+    nav li {
+        display: inline-block !important;
+        margin: 5px !important;
+    }
+}
  
