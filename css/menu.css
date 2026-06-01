@@ -64,3 +64,26 @@ button {
 
     font-size: 1.4em;
 }
+
+@media screen and (max-width: 800px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 4px 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+}
