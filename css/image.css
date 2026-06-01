@@ -59,5 +59,13 @@
     margin: 0 auto !important;  
 }
 
+@media screen and (max-width: 800px) {
+
+    .banner img {
+        height: 150px;
+        object-fit: cover;
+    }
+
+}
     
 
