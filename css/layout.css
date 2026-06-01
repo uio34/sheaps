@@ -95,11 +95,9 @@ footer {
 
 
 .yamato-page .layout {
-    background-color: #2c2c2c; 
-  
-    float: none;
-    margin: 2em auto; 
-    display: table; 
+    background-color: #2c2c2c;
+    margin: 2em auto;
+    overflow: hidden;
 }
 
 .yamato-page .content {
