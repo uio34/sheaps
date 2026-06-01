@@ -64,7 +64,6 @@ p {
     border-bottom: 1px solid #ccc;
 }
 
-
 .yamato-page p {
     color: #dddddd; 
 }
@@ -85,7 +84,6 @@ p {
     border-bottom: 1px solid #555;
 }
 
-
 .email-link {
     display: inline-block;    
     font-size: 1.1em;         
@@ -100,12 +98,9 @@ p {
     transition: all 0.3s ease;
 }
 
-
 .email-link:hover {
     background-color: #29b6e8; 
     color: #ffffff;           
 }
-
-   
    
 

@@ -14,7 +14,9 @@ body {
 
 .wrapper {
     width: 90%;
- 
+
+    min-width: 80em;
+
     max-width: 120em;
 
     margin: auto;}
@@ -73,7 +75,6 @@ footer {background-color: black;
     border-left: 0.5em solid #29b6e8;
 }
 
-
 .cruisers-page .content {
     float: right; 
     width: 70%;
@@ -104,32 +105,13 @@ footer {background-color: black;
     background-color: #8b0000; 
 }
 
-
 .yamato-page .history-box {
     background-color: #444444 !important; 
     color: #ffffff !important;           
     border-left: 0.5em solid #ff4d4d !important; 
 }
 
-
 .yamato-page .history-box p {
     color: #ffffff !important;
-}
-
-
-max-width: 800px {
-    .content, .sidebar, 
-    .cruisers-page .content, .cruisers-page .sidebar, 
-    .yamato-page .content, .yamato-page .sidebar {
-        width: 100% !important;
-        float: none !important;
-        margin: 0 !important;
-        padding: 10px 0 !important;
-    }
-    
-    .logo, nav {
-        float: none !important;
-        text-align: center;
-    }
 }
  
